@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print &amp; Crafts by JSMN | Custom Printing and Crafts</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap-icons-local.css">
+    <link rel="stylesheet" href="bootstrap5/css/business.css">
+    <style>
+        .theme-toggle { background: transparent; border: 1px solid rgba(255,255,255,.45); color: #ffd479; border-radius: 4px; padding: .45rem .65rem; cursor: pointer; }
+        .pricing-lab { background: #fff; padding: 4rem 1in; }
+        .pricing-lab h2 { text-align: center; color: #1e1d1b; margin-bottom: 2rem; }
+        .pricing-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .pricing-card { background: #fff; border: 1px solid #e0e0e0; border-top: 4px solid #d45a9b; border-radius: 12px; padding: 1.6rem; box-shadow: 0 4px 15px rgba(0,0,0,.08); }
+        .pricing-card.featured { border-top-color: #f4b860; transform: translateY(-8px); }
+        .pricing-card h3 { color: #2e2d2a; }
+        .pricing-card .plan-price { color: #a73f77; font-size: 1.65rem; font-weight: 700; }
+        .pricing-card li { margin: .6rem 0; color: #4e4a44; }
+        .pricing-grid .pricing-card { width: auto; }
+        @media (max-width: 800px) { .pricing-lab { padding: 3rem 1.2rem; } .pricing-grid { grid-template-columns: 1fr; } .pricing-card.featured { transform: none; } }
+        [data-theme="dark"] .pricing-lab, [data-theme="dark"] .pricing-card { background: #242131; color: #fff5fb; }
+        [data-theme="dark"] .pricing-lab h2, [data-theme="dark"] .pricing-card h3, [data-theme="dark"] .pricing-card li { color: #fff5fb; }
+        [data-theme="dark"] body, [data-theme="dark"] .about, [data-theme="dark"] .contact { background: #242131; color: #fff5fb; }
+        [data-theme="dark"] .features, [data-theme="dark"] .testimonials { background: #302944; color: #fff5fb; }
+        [data-theme="dark"] .about h2, [data-theme="dark"] .contact h2, [data-theme="dark"] .services h2, [data-theme="dark"] .features h2, [data-theme="dark"] .gallery h2, [data-theme="dark"] .testimonials h2 { color: #fff5fb; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="brand" aria-label="Print and Crafts by JSMN brand logo and business name">
+                <img class="brand-logo" src="bootstrap5/css/images/logo.jpg" alt="Print & Crafts by JSMN logo">
+                <div class="brand-text">
+                    <span>Print &amp; Crafts</span>
+                    <small>by JSMN</small>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg" aria-label="Primary navigation">
+                <ul class="nav-menu navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Why Choose Us</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode"><i class="bi bi-moon-stars-fill"></i></button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="jas">
+        <div class="jas-content">
+            <h2>Welcome to Print & Crafts <span class="smoothie-name">by JSMN</span></h2>
+            <p class="jas-tagline">Bringing Your Ideas to Life with Precision and Creativity</p>
+            <p class="jas-note">Custom printing services and handcrafted fuzzy wire art that makes your projects truly unique and memorable.</p>
+            <div class="button-group">
+                <a href="#gallery" class="cta-btn">See Our Work</a>
+                <a href="#contact" class="cta-btn">Order Now</a>
+            </div>
+        </div>
+        <div class="jas-image jas-visual">
+            <img src="bootstrap5/css/images/jas-printing.jpg" alt="Professional Printing Services">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Print & Crafts by JSMN</h2>
+
+        <div class="about-container">
+            <div class="story-row">
+                <div class="story-section">
+                    <h3>Story &amp; Background</h3>
+                    <p>Founded in 2019 with passion and creativity, Print &amp; Crafts by JSMN started as a small home-based project and has grown into a trusted creative hub. What began as a hobby turned into a mission to deliver exceptional printed materials and handcrafted creations that bring smiles and inspire imagination.</p>
+                </div>
+
+                <div class="story-image">
+                    <img src="bootstrap5/css/images/studio-tour.jpg" alt="Studio Tour">
+                </div>
+            </div>
+
+            <div class="principles-section">
+                <h3>Core Principles</h3>
+                <div class="mission-vision-container">
+                    <div class="mission-card">
+                        <h4>Our Mission</h4>
+                        <p>To provide high-quality custom printing services and thoughtfully handcrafted fuzzy wire art that transforms ordinary moments into extraordinary memories. We believe in the power of personalization and creativity.</p>
+                    </div>
+                    <div class="vision-card">
+                        <h4>Our Vision</h4>
+                        <p>To be the go-to destination for personalized printing solutions and unique craft creations that bring joy, personality, and artistic expression to every project, from business needs to personal celebrations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="different-section">
+                <h3>Why We're Different</h3>
+                <div class="different-bullets">
+                    <p>✔ Every project receives personal attention</p>
+                    <p>✔ Quick turnaround without compromising quality</p>
+                    <p>✔ Custom designs tailored to your vision</p>
+                    <p>✔ Sustainable and eco-friendly options available</p>
+                </div>
+            </div>
+
+            <div class="location-connect-container">
+                <div class="connect-section">
+                    <h3>Connect</h3>
+                    <p><strong>📞 Phone:</strong> 0967-922-7179</p>
+                    <p><strong>📧 Email:</strong> ramosjasmine670@gmail.com</p>
+                </div>
+
+                <div class="location-section">
+                    <h3>Location &amp; Map</h3>
+                    <p><strong>📍 Address:</strong> Sitio Centro, Cumba, Lian, Batangas</p>
+                    <div class="map-container">
+                        <iframe
+                            class="map-frame"
+                            src="https://www.google.com/maps?q=Cumba%20Elementary%20School%20Lian%20Batangas&output=embed"
+                            width="100%"
+                            height="220"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Products & Services</h2>
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="bootstrap5/css/images/invitation-cards.jpg" alt="Custom Invitation Cards">
+                </div>
+                <h3>Custom Invitation Cards</h3>
+                <p>Professional Invitation cards with premium cardstock and various finishes. Full-color printing with matte, gloss, or textured options. Perfect for making a lasting impression to your guests.</p>
+                <p class="price"> ₱ 20 per card</p>
+                <a class="service-btn" href="https://www.instagram.com/p/DO0sMFsklJ8/?img_index=2" target="_blank" rel="noopener noreferrer">View Samples</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="bootstrap5/css/images/fuzzy-wire-art.jpg" alt="Handcrafted Fuzzy Wire Art">
+                </div>
+                <h3>Fuzzy Wire Art & Crafts</h3>
+                <p>Handcrafted fuzzy wire creations including personalized names and custom designs. Each piece is made with care and attention to detail. Perfect gifts and unique home décor.</p>
+                <p class="price"> ₱50 per piece</p>
+                <a class="service-btn" href="https://www.instagram.com/p/DAcuPK_vOE0/" target="_blank" rel="noopener noreferrer">Browse Designs</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="bootstrap5/css/images/apparel-printing.jpg" alt="Custom Apparel Printing">
+                </div>
+                <h3>Custom Apparel Printing</h3>
+                <p>T-shirts, hoodies, and custom clothing with your designs using high-quality direct-to-garment printing. Great for events, businesses, teams, and personal expression. Fast turnaround time.</p>
+                <p class="price"> ₱100 per piece</p>
+                <a class="service-btn" href="https://www.instagram.com/p/DT-dlCXE8cS/" target="_blank" rel="noopener noreferrer">Apparel</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="bootstrap5/css/images/stickers-service.jpg" alt="Custom Stickers & Labels">
+                </div>
+                <h3>Custom Stickers & Labels</h3>
+                <p>High-quality, waterproof, and vibrant custom sticker printing for branding, packaging, or personal use. Available in die-cut, kiss-cut, glossy, matte, and transparent finishes tailored to your design.</p>
+                <p class="price"> ₱60 per design</p>
+                <a class="service-btn" href="https://www.instagram.com/decalbarmnl/" target="_blank" rel="noopener noreferrer">Custom Stickers</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-lab">
+        <div class="container">
+        <h2>Choose Your Creative Package</h2>
+        <div class="pricing-grid row g-4">
+            <article class="pricing-card col-sm-12 col-md-4">
+                <h3>Starter</h3>
+                <p>For personal invitations, labels, and small keepsakes.</p>
+                <p class="plan-price">From ₱20</p>
+                <ul><li>Invitation card printing</li><li>Basic layout assistance</li><li>Paper finish options</li></ul>
+                <a class="service-btn" href="#contact">Start an Order</a>
+            </article>
+            <article class="pricing-card featured col-sm-12 col-md-4">
+                <h3>Pro</h3>
+                <p>For businesses, teams, and special events.</p>
+                <p class="plan-price">From ₱100</p>
+                <ul><li>Custom apparel printing</li><li>Stickers and labels</li><li>Design coordination</li></ul>
+                <a class="service-btn" href="#contact">Choose Pro</a>
+            </article>
+            <article class="pricing-card col-sm-12 col-md-4">
+                <h3>Enterprise</h3>
+                <p>For bulk orders and complete creative projects.</p>
+                <p class="plan-price">Custom quote</p>
+                <ul><li>Bulk printing support</li><li>Fuzzy wire gift sets</li><li>Priority coordination</li></ul>
+                <a class="service-btn" href="#contact">Request a Quote</a>
+            </article>
+        </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Why Choose Print & Crafts by JSMN?</h2>
+        <div class="features-container container">
+            
+            <div class="feature">
+                <div class="feature-icon text-warning" aria-hidden="true"><i class="bi bi-award-fill"></i></div>
+                <h3>Quality Craftsmanship</h3>
+                <p>Every project is handled with meticulous attention to detail. We use premium materials and advanced printing techniques to ensure superior quality in every creation.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon text-primary" aria-hidden="true"><i class="bi bi-palette-fill"></i></div>
+                <h3>Creative Excellence</h3>
+                <p>Our talented team brings artistic vision to every project. From concept to completion, we ensure your ideas are transformed into beautiful, unique creations.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon text-success" aria-hidden="true"><i class="bi bi-lightning-charge-fill"></i></div>
+                <h3>Fast & Reliable Service</h3>
+                <p>We understand your timeline matters. Our efficient processes ensure quick turnarounds without compromising quality. We deliver on time, every time.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Our Work Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="bootstrap5/css/images/Invit-cards.jpg" alt="Elegant Invitation Cards Design">
+                <span class="gallery-label">Invitation Cards</span>
+            </div>
+            <div class="gallery-item">
+                <img src="bootstrap5/css/images/flyers.jpg" alt="Colorful Promotional Flyers">
+                <span class="gallery-label">Promotional Flyers</span>
+            </div>
+            <div class="gallery-item">
+                <img src="bootstrap5/css/images/wire-cat.jpg" alt="Handcrafted Fuzzy Wire Cat">
+                <span class="gallery-label">Fuzzy Wire Cat</span>
+            </div>
+            <div class="gallery-item">
+                <img src="bootstrap5/css/images/tshirt-printing.jpg" alt="Custom T-Shirt Printing">
+                <span class="gallery-label">Custom T-Shirt Printing</span>
+            </div>
+            <div class="gallery-item">
+                <img src="bootstrap5/css/images/wire-sculpture.jpg" alt="Wire Sculpture Masterpiece">
+                <span class="gallery-label">Wire Sculpture</span>
+            </div>
+            <div class="gallery-item">
+                <img src="bootstrap5/css/images/brochure.jpg" alt="Professional Brochure Design">
+                <span class="gallery-label">Brochure Design</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <div id="testimonialCarousel" class="testimonials-container carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"I absolutely love the custom stickers for my business packaging! They are truly waterproof and the colors are super vibrant. Turnaround was fast too. Highly recommended!"</p>
+                <h4>- Angela Gomez</h4>
+                <p class="testimonial-role">Online Shop Owner</p>
+            </div>
+
+            <div class="testimonial-card carousel-item">
+                <div class="stars">⭐⭐⭐⭐✨</div>
+                <p>"The fuzzy wire creations are so cute and beautifully made! I ordered a custom piece as a gift for my partner, and they loved how detailed it was. Truly a unique gift idea!"</p>
+                <h4>- Gwen Garcia</h4>
+                <p class="testimonial-role">Verified Customer</p>
+            </div>
+
+            <div class="testimonial-card carousel-item">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p>"Fast service and excellent print quality! We ordered custom t-shirts for our event, and the print outcome was clean and durable. Very easy to communicate with. Will order again!"</p>
+                <h4>- Sky Manalo</h4>
+                <p class="testimonial-role">Event Organizer</p>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                
+                <div class="contact-detail">
+                    <h4>📍 Address</h4>
+                    <p>Sitio Centro, Cumba Lian, Batangas</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h4>📞 Phone</h4>
+                    <p><a class="contact-link" href="tel:+639679227179">0967-922-7179</a></p>
+                </div>
+
+                <div class="contact-detail">
+                    <h4>✉️ Email</h4>
+                    <p><a class="contact-link" href="https://mail.google.com/mail/u/0/#inbox" target="_blank" rel="noopener noreferrer">ramosjasmine670@gmail.com</a></p>
+                </div>
+
+                <div class="contact-detail">
+                    <h4>⏰ Business Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                       Saturday: 10:00 AM - 4:00 PM<br>
+                       Sunday: 1:00 PM - 5:00 PM</p>
+                </div>
+
+                <div class="contact-detail">
+                    <h4>💬 Social Link</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61586262344212" target="_blank" class="social-btn">FB</a>
+                        <a href="https://www.instagram.com/_jassyminn/" target="_blank" class="social-btn">IG</a>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contactForm" class="contact-form needs-validation" novalidate>
+                <h3>Send Us a Message</h3>
+                
+                <div class="form-group mb-3">
+                    <label for="name">Full Name</label>
+                    <input class="form-control" type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="email">Email Address</label>
+                    <input class="form-control" type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="subject">Subject</label>
+                    <input class="form-control" type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn btn btn-primary">Submit Message</button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section brand-section">
+                <h4>Print & Crafts by JSMN</h4>
+                <p>&copy; 2024 Print & Crafts by JSMN. All rights reserved.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="quick-links-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p class="contact-info">
+                    📞 0967-922-7179<br>
+                    ✉️ ramosjasmine670@gmail.com
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=61586262344212" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap5/js/sweetalert2.all.min.js"></script>
+    <script>
+        const page = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle');
+        const storedTheme = localStorage.getItem('jsmn-theme');
+        if (storedTheme) page.dataset.theme = storedTheme;
+
+        function updateThemeToggle() {
+            const isDark = page.dataset.theme === 'dark';
+            themeToggle.innerHTML = `<i class="bi bi-${isDark ? 'sun-fill' : 'moon-stars-fill'}"></i>`;
+            themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+        }
+
+        updateThemeToggle();
+        themeToggle.addEventListener('click', () => {
+            const nextTheme = page.dataset.theme === 'dark' ? 'light' : 'dark';
+            page.dataset.theme = nextTheme;
+            localStorage.setItem('jsmn-theme', nextTheme);
+            updateThemeToggle();
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const form = event.currentTarget;
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                Swal.fire({ icon: 'warning', title: 'Complete the form', text: 'Please fill in all required fields.', confirmButtonColor: '#d45a9b' });
+                return;
+            }
+            Swal.fire({ icon: 'success', title: 'Message sent!', text: 'Thank you. Print & Crafts by JSMN will contact you soon.', confirmButtonColor: '#112947' });
+            form.reset();
+            form.classList.remove('was-validated');
+        });
+
+        document.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            Swal.fire({ icon: 'info', title: 'Print & Crafts by JSMN', text: 'Please use the website navigation to explore our services.', confirmButtonColor: '#d45a9b' });
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && ['I', 'J', 'C'].includes(event.key.toUpperCase()))) {
+                event.preventDefault();
+                Swal.fire({ icon: 'warning', title: 'Action unavailable', text: 'This shortcut is disabled on the business page.', confirmButtonColor: '#d45a9b' });
+            }
+        });
+    </script>
+
+</body>
+</html>
